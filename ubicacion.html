@@ -66,7 +66,7 @@
             <li class=""><a href="#mapa" data-toggle="tab" aria-expanded="false">Mapa</a>
             </li>
         </ul>
-
+<!--El uso de bootstrap nos permite implementar un sistema de nav-taps para poder navegar de forma más ordenada en la informacion. en este caso hacemos uso de la api de google maps para mostrar la ubicacion de las dos formas que nos permite, street view y map view-->
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="streetview">
                 <div class="container-fluid">
@@ -88,6 +88,7 @@
                 <h2 class="page-header">Envianos tus comentarios</h2>
 
                 <br>
+                <!--formulario sencillo que manda por metodo POST los datos al nuestro archivo mail.php para poder enviar los comentarios a un correo especifico-->
                 <form method='post' action='mail.php' enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
@@ -107,7 +108,7 @@
                 </form>
 
             </div>
-
+    </div>
              <footer class="footer footer-fixed-bottom pie">
         <div class="container">
             <p class="text-muted text-right">Sitio Creado por <a href="#">Luis Ricardo Vallejo Gutierrez</a> Enero 2016
@@ -119,10 +120,7 @@
             <script src="js/bootstrap.min.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
 	$(window).load(function() {
-		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
     </script>

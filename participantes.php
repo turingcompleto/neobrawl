@@ -69,6 +69,7 @@
                                 <div class="panel-heading">
                                     <h1 class="tituloprimario">Participantes</h1>
                                 </div>
+                                <!--Se crea la tabla de los participantes y con nuestro script en php vamos a iterar sobre cada participante registrado en nuestra base de datos para que se muestre en pantalla-->
                                 <table class="table table-striped table-hover ">
                                     <thead>
                                         <tr>
@@ -78,7 +79,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php include( 'consulta2.php'); ?>
+                                        <?php include( 'consulta2.php'); ?> 
+                                        <!--Script con la estructura:
+                                          <tr><td>ID</td><td>No. de llegada</td><td>Nick</td>-->
                                     </tbody>
                                 </table>
                             </div>
@@ -87,7 +90,7 @@
                 </div>
             </div>
         </div>
-
+    </div>
      <footer class="footer footer-fixed-bottom pie">
         <div class="container">
             <p class="text-muted text-right">Sitio Creado por <a href="#">Luis Ricardo Vallejo Gutierrez</a> Enero 2016
@@ -99,10 +102,9 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
+
 	$(window).load(function() {
-		// Animate loader off screen
+
 		$(".se-pre-con").fadeOut("slow");;
 	});
     </script>

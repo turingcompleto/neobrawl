@@ -1,3 +1,4 @@
+/*Se define el fondo de pantalla con los selectores de CSS*/
 body {
     background: url('../img/smashback.jpg');
     background-repeat: no-repeat;
@@ -54,12 +55,12 @@ margin-top: 50px;
     background: rgba(250, 250, 250, 0.18);
 
 }
-
+/*esto es para el modal de la pagina REGISTRO que sirve como anuncio para entrar al grupo de facebook*/
 .modal.in {
    display:block;
 }
 
-/* LOADING*/
+/* LEsto es el codigo de CSS para poder hacer el loader*/
 
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -78,8 +79,7 @@ margin-top: 50px;
     background: rgba(28, 88, 166, 0.25);
 }
 
-/*Titulo responsive*/
-
+/*Como se usan medidas fijas en el titulo animado con el que usamos typed.js es necesario crear los breakpoints para que en la resolución que definimos se ajuste el texto. En terminos generales, hacemos responsive desde cero sin la ayuda de bootsrap*/
 @media screen and (max-width:1920px) {
     .typedtitle {
         font-size: 3em;
@@ -151,15 +151,9 @@ text-shadow: 2px 2px 5px black;
         height:200px; 
     }
     }
+/*Termina el responsive de typed.js*/
 
-
-/* //Fausto modificación */
-
-.typedtitle{    
-}
-
-/*Cursor que parpadea mamalon*/
-
+/*La animacion para simular el parpadeo del cursor en el titulo construido con typed.js*/
 .typed-cursor {
             opacity: 1;
             font-weight: 100;
@@ -229,4 +223,4 @@ text-shadow: 2px 2px 5px black;
                 opacity: 1;
             }
         }
-/*termina el cursor que parpadea mamalon*/
+/*termina el cursor que parpadea*/

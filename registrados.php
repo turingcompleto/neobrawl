@@ -68,6 +68,7 @@
   </thead>
   <tbody>
     <?php include('consulta.php'); ?>
+    <!--Script para mostrar de manera iterativa una consulta con el formato necesario para acoplarse a la tabla en html al igual que en participantes-->
   </tbody>
 </table> 
             </div>
@@ -87,10 +88,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
 	$(window).load(function() {
-		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
     </script>

@@ -100,32 +100,22 @@
                          
                             <a href="#" class="btn btn-link">Ver más...</a>
                         </div>
-                        <!--
-                      <div class="tab-pane fade" id="ranking">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aut non fugiat tenetur alias nesciunt quaerat ea iusto pariatur, labore sit? Veritatis exercitationem aperiam adipisci, deserunt repellendus blanditiis nisi voluptatem.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo hic distinctio repellat voluptate, sed ex itaque. Repellendus hic quis, eaque dolorum tenetur sapiente atque! Ad enim expedita doloremque dolorem. Soluta.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, sed eaque, molestiae architecto ullam earum, mollitia, cum dicta numquam eius veritatis quos. Laudantium vero facere, deleniti maxime, repellendus excepturi nisi.</p>
-                            <a href="#" class="btn btn-link">Ver más...</a>
-                        </div>
-                        <div class="tab-pane fade" id="ganadores">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quas. Non placeat recusandae blanditiis, eius sit consectetur culpa repellendus reprehenderit quasi, distinctio quae repudiandae odit tempore et, iusto fuga ipsum!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo hic distinctio repellat voluptate, sed ex itaque. Repellendus hic quis, eaque dolorum tenetur sapiente atque! Ad enim expedita doloremque dolorem. Soluta.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, sed eaque, molestiae architecto ullam earum, mollitia, cum dicta numquam eius veritatis quos. Laudantium vero facere, deleniti maxime, repellendus excepturi nisi.</p>
-                            <a href="#" class="btn btn-link">Ver más...</a>
-                        </div>
-                        <div class="clearfix"></div>-->
                     </div>
-
                 </div>
+                <!--El siguiente script valida si el numero de participantes no excede los limites establecidos, de lo contario llena las variables para cambiar el estado de lo que se muestra-->
                 <?php
                include('validacion1.php');
                 ?>
                     <div class="col-md-5">
-                        <form class="form-horizontal" action="index.php" method="post">
+                       <!--los datos de registro se envian por POST a este mismo archivo-->
+                        <form class="form-horizontal" action="registro.php" method="post">
                             <fieldset>
                                 <legend>Registro
-                                    <h6 class="text-primary"><?php echo $mensaje ?></h6></legend>
+                                    <h6 class="text-primary"><?php echo $mensaje ?></h6>
+                                    <!--la variable $mensaje muestra un mensaje de notificacion para los usuarios de acuerdo al valor de su registro-->
+                                    </legend>
                                 <div class="form-group <?php echo $clasee ?>">
+                                   <!--la variable clase cambia el valor de una clase definida en CSS para cambiar los colores en caso de tener un error o un acierto en el registro-->
                                     <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                                     <div class="col-lg-10">
                                         <input type="email" class="form-control" id="inputEmail" name="mail" placeholder="Email" required>
@@ -143,6 +133,7 @@
                                     <div class="col-lg-10 col-lg-offset-2">
                                         <button type="reset" class="btn btn-primary">Cancelar</button>
                                         <button type="submit" class="btn btn-info" <?php echo $clase ?>>Registrar</button>
+                                        <!--esta variable $clase lo que hace es poner un disabled o enabled en el formulario dependiendo del numero de registrados-->
                                     </div>
                                 </div>
                             </fieldset>
@@ -151,7 +142,7 @@
             </div>
         </div>
         <div class="container">
-            <!-- Modal -->
+            <!-- Modal que muestra el mensaje inicial para el ingreso al grupo de facebook-->
             <div class="modal  in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -184,10 +175,8 @@
     <script src="js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
+
 	$(window).load(function() {
-		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
     </script>
