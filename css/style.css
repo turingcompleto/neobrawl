@@ -1,15 +1,15 @@
 body {
-    background: url('/img/smashback.jpg');
+    background: url('../img/smashback.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     
-    -webkit-background: url('/img/smashback.jpg');
+    -webkit-background: url('../img/smashback.jpg');
     -webkit-background-repeat: no-repeat;
     -webkit-background-position: center center;
     -webkit-background-attachment: fixed;
     
-    -moz-background: url('/img/smashback.jpg');
+    -moz-background: url('../img/smashback.jpg');
     -moz-background-repeat: no-repeat;
     -moz-background-position: center center;
     -moz-background-attachment: fixed;
@@ -18,6 +18,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+     
 }
 
 .contenido1{
@@ -57,3 +58,175 @@ margin-top: 50px;
 .modal.in {
    display:block;
 }
+
+/* LOADING*/
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/Preloader_3.gif) center no-repeat #fff;
+}
+
+.main{
+    margin-top: 30px;
+    background: rgba(28, 88, 166, 0.25);
+}
+
+/*Titulo responsive*/
+
+@media screen and (max-width:1920px) {
+    .typedtitle {
+        font-size: 3em;
+            margin-top: 30%;
+    color: white;
+    text-align: center;
+        text-shadow: 2px 1px 5px black;
+       font-family: 'Inconsolata', ;
+    }
+    .image{
+      display: inherit;  
+    }    
+    .background{
+        height:auto; 
+    }
+}
+@media screen and (max-width:1080px) {
+    .typedtitle {
+        font-size: 1.5em;
+            margin-top: 30%;
+    color: white;
+    text-align: center;
+text-shadow: 2px 2px 5px black;
+        font-family: 'Inconsolata', ;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .typedtitle {
+        font-size: 1.45em;
+    }
+    @media screen and (max-width:700px) {
+        .typedtitle {
+            font-size: 1em;
+             margin-top: 20%;
+            text-shadow: 2px 2px 5px black;
+            font-family: 'Inconsolata', ;
+        }
+        .image{
+      display: none;  
+    }  
+    }
+    @media screen and (max-width:400px) {
+        .typedtitle {
+            font-size: 1.1em;
+            margin-top: 5%;
+            text-shadow: 2px 2px 5px black;
+            font-family: 'Inconsolata', ;
+        }
+        .image{
+      display: none;  
+    }
+                .background{
+        height:300px; 
+    }
+    }
+
+    @media screen and (max-width:200px) {
+        .typedtitle {
+            font-size: .5em;
+            margin-top: 5%;
+            text-shadow: 2px 2px 5px black;
+            font-family: 'Inconsolata', ;
+        }
+        .image{
+      display: none;  
+    }
+        .background{
+        height:200px; 
+    }
+    }
+
+
+/* //Fausto modificación */
+
+.typedtitle{    
+}
+
+/*Cursor que parpadea mamalon*/
+
+.typed-cursor {
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        
+        @-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-ms-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+/*termina el cursor que parpadea mamalon*/

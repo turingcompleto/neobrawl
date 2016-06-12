@@ -35,21 +35,7 @@
                             </li>
                             <li><a href="ubicacion.html">Ubicación</a>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca de <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Torneo SSBWIIU</a>
-                                    </li>
-                                    <li><a href="http://faustocesar.esy.es/">El desarrollador</a>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="https://www.facebook.com/thewigginsmx?fref=ts">TheWiggins</a>
-                                    </li>
-                                    <li><a href="https://www.facebook.com/pages/CIDWA/695261777263186?fref=ts">CIDWA</a>
-                                    </li>
-                                    <li><a href="https://www.facebook.com/cenesmat?fref=ts">CEM</a>
-                                    </li>
-                                </ul>
+                            <li><a href="registro.php">Registro</a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">

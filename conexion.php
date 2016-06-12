@@ -1,12 +1,9 @@
 <?php
-$host='localhost';
-$database='u687036696_fcr';
-$username='u687036696_fcr'; 
-$password='p0rung4';
-$link=mysqli_connect ($host, $username, $password, $database);
 
+$link = mysqli_connect("127.0.0.1", "root", "#MUld3r3x", "u687036696_fcr");
+ 
 if(!$link){
     
-	die('Error al conectarse a MySql:'.mysql_error()); 
+	die('Error al conectarse a MySql:'.mysqli_error()); 
 }
 ?>
