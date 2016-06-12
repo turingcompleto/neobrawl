@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Ubicación</title>
+</head>
+
+<body>
+   <div class="se-pre-con"></div>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu1" aria-expanded="false">
+                            <span class="sr-only">Navegación</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.php">Torneo de SSBWIIU</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="menu1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.php">Inicio</a>
+                            </li>
+                            <li><a href="participantes.php">Participantes</a>
+                            </li>
+                            <li><a href="stage.html">Stages</a>
+                            </li>
+                            <li><a href="ubicacion.html">Ubicación</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca de <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Torneo SSBWIIU</a>
+                                    </li>
+                                    <li><a href="#">Los desarrolladores</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">TheWiggins</a>
+                                    </li>
+                                    <li><a href="#">CIDWA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://www.facebook.com/groups/1418559165123330/?fref=ts">Grupo Facebook</a>
+                            </li>
+                            <!--<li><a href="#">Youtube</a>
+                            </li>
+                            <li><a href="#">Twitter</a>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="page-header">
+                <h2 class="text-center text-primary">¿En dondé será el torneo?<small> </small></h2>
+            </div>
+            
+            <h3>En la Deporteca de FES Acatlán (la planta alta del Gimnasio, a un lado de la cafeteria-libreria)</h3>
+        </div>
+        <div class="container-fluid">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#streetview" data-toggle="tab" aria-expanded="true">Street View</a>
+            </li>
+            <li class=""><a href="#mapa" data-toggle="tab" aria-expanded="false">Mapa</a>
+            </li>
+        </ul>
+
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="streetview">
+                <div class="container-fluid">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses-419!2smx!4v1454056355492!6m8!1m7!1s4Gph94DX2YZPhXx7fMOaYw!2m2!1d19.48186584017342!2d-99.2447602595675!3f15.451627360406917!4f-3.4561821267020036!5f0.7820865974627469" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="mapa">
+                <div class="container-fluid">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3761.3365512520313!2d-99.24799105991126!3d19.48415109925983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x85d2039fbdc5a7b3%3A0xc950aed67b794f8f!2sAvenida+Alcanfores+y+San+Juan+Totoltepec+s%2Fn%2C+Colonia+Santa+Cruz+Acatlan%2C+53150+Naucalpan%2C+MEX!3m2!1d19.4825867!2d-99.24492!5e0!3m2!1ses-419!2smx!4v1454056124386" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+ <div class="clearfix"></div>
+                    </div>
+
+</div>
+            <div class="container">
+                <h2 class="page-header">Envianos tus comentarios</h2>
+
+                <br>
+                <form method='post' action='mail.php' enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre:">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <input class="form-control" id="correo" name="correo" type="mail" placeholder="ejemplo@gmail.com:">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje:" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" name="submit" value="contacto">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <footer class="footer footer-fixed-bottom pie">
+        <div class="container">
+            <p class="text-muted text-right">Sitio Creado por <a href="#">Luis Ricardo Vallejo Gutierrez</a> Enero 2016
+            </p>
+        </div>
+    </footer>
+
+            <script src="js/jquery-1.11.3.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script>
+</body>
+
+</html>

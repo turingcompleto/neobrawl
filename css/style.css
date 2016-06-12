@@ -1,0 +1,59 @@
+body {
+    background: url('/img/smashback.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    -webkit-background: url('/img/smashback.jpg');
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-position: center center;
+    -webkit-background-attachment: fixed;
+    
+    -moz-background: url('/img/smashback.jpg');
+    -moz-background-repeat: no-repeat;
+    -moz-background-position: center center;
+    -moz-background-attachment: fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contenido1{
+margin-top: 100px;
+}
+.contenido2{
+    margin-top: 50px;
+}
+.pie{
+    margin-top: 240px;
+}
+
+.pie2{
+    margin-top: 180px;
+}
+.pie3{
+    margin-top: 40px;
+}
+
+.jumbo{
+background: rgba(255, 255, 255, 0.06);
+}
+
+.tituloprimario{
+    color: aliceblue;
+}
+
+
+.lol{
+margin-top: 50px;
+}
+.thumbnail{
+    background: rgba(250, 250, 250, 0.18);
+
+}
+
+.modal.in {
+   display:block;
+}
